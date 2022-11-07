@@ -36,6 +36,3 @@ if (eta < 18){
     // output:
     document.getElementById("text").innerHTML = `Il prezzo del tuo biglietto è di ${prezzoBiglietto} EURO.`;
 }
-
-
-
