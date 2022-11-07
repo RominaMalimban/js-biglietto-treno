@@ -1,8 +1,13 @@
 // Devo calcolare il prezzo del biglietto del treno, quindi:
 
-// devo chiedere il numero di Km da percorrere
+// devo chiedere il numero di Km da percorrere:
+let chilometri= parseInt(prompt("Per favore, inserisci il numero di Km che vuoi percorrere"));
+console.log(chilometri);
 
 // devo chiedere l'età del pax
+
+
+
 
 // devo calcolare il costo del biglietto moltiplicando i km per 0.21 euro
 
