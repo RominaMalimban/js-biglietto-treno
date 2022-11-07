@@ -15,10 +15,22 @@ let costoPerKm = 0.21;
 let prezzoBiglietto = chilometri * costoPerKm;
 console.log(prezzoBiglietto);
 
+// devo creare una variabile per sconto minorenne del 20%:
+let scontoMinorenne = prezzoBiglietto * 20 / 100;
+
+// devo creare una variabile per sconto over 65 del 40%:
+let scontoSenior = prezzoBiglietto * 40 / 100;
+
 
 // condizioni:
-// - se eta minore di 18, allora avrà uno sconto del 20%
-// - se età maggiore di 65, allora avrà uno sconto del 40%
+if (eta < 18){
+    console.log(prezzoBiglietto - scontoMinorenne)
+}else if( eta > 65 ){
+    console.log(prezzoBiglietto - scontoSenior)
+}else{
+    console.log(prezzoBiglietto)
+}
+
 
 
 // output: prezzo finale con massimo due numeri decimali. 
