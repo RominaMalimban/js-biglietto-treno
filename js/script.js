@@ -12,8 +12,8 @@ console.log(eta);
 // creo variabile per prezzo del biglietto per km
 let costoPerKm = 0.21;
 
-// devo calcolare il costo totale del biglietto moltiplicando i km per 0.21 euro
-let prezzoBiglietto = chilometri * costoPerKm;
+// devo calcolare il costo totale del biglietto moltiplicando i km per 0.21 €
+let prezzoBiglietto = (chilometri * costoPerKm).toFixed(2);
 console.log(prezzoBiglietto);
 
 // devo creare una variabile per sconto minorenne del 20%:
@@ -26,15 +26,15 @@ let scontoSenior = prezzoBiglietto * 40 / 100;
 if (eta < 18){
     let prezzoMinorenne = (prezzoBiglietto - scontoMinorenne).toFixed(2);
     // output:
-    document.getElementById("text").innerHTML = `Il prezzo del tuo biglietto è di ${prezzoMinorenne} EURO.`;
+    document.getElementById("text").innerHTML = `Il prezzo del tuo biglietto è di ${prezzoMinorenne}€.`;
 }else if( eta > 65 ){
     let prezzoSenior = (prezzoBiglietto - scontoSenior).toFixed(2);
     // output:
-    document.getElementById("text").innerHTML = `Il prezzo del tuo biglietto è di ${prezzoSenior} EURO.`;
+    document.getElementById("text").innerHTML = `Il prezzo del tuo biglietto è di ${prezzoSenior}€.`;
 }else{
     prezzoBiglietto;
     // output:
-    document.getElementById("text").innerHTML = `Il prezzo del tuo biglietto è di ${prezzoBiglietto} EURO.`;
+    document.getElementById("text").innerHTML = `Il prezzo del tuo biglietto è di ${prezzoBiglietto}€.`;
 }
 
 
