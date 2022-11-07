@@ -11,7 +11,7 @@ console.log(eta);
 // creo variabile per prezzo del biglietto per km
 let costoPerKm = 0.21;
 
-// devo calcolare il costo del biglietto moltiplicando i km per 0.21 euro
+// devo calcolare il costo totale del biglietto moltiplicando i km per 0.21 euro
 let prezzoBiglietto = chilometri * costoPerKm;
 console.log(prezzoBiglietto);
 
@@ -24,11 +24,11 @@ let scontoSenior = prezzoBiglietto * 40 / 100;
 
 // condizioni:
 if (eta < 18){
-    console.log(prezzoBiglietto - scontoMinorenne)
+    console.log((prezzoBiglietto - scontoMinorenne).toFixed(2))
 }else if( eta > 65 ){
-    console.log(prezzoBiglietto - scontoSenior)
+    console.log((prezzoBiglietto - scontoSenior).toFixed(2))
 }else{
-    console.log(prezzoBiglietto)
+    console.log(prezzoBiglietto.toFixed(2))
 }
 
 
