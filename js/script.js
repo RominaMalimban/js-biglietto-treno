@@ -8,8 +8,13 @@ console.log(chilometri);
 let eta = parseInt(prompt("E ora inserisci la tua età"));
 console.log(eta);
 
+// creo variabile per prezzo del biglietto per km
+let costoPerKm = 0.21;
 
 // devo calcolare il costo del biglietto moltiplicando i km per 0.21 euro
+let prezzoBiglietto = chilometri * costoPerKm;
+console.log(prezzoBiglietto);
+
 
 // condizioni:
 // - se eta minore di 18, allora avrà uno sconto del 20%
