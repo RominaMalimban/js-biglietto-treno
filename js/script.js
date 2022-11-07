@@ -21,16 +21,20 @@ let scontoMinorenne = prezzoBiglietto * 20 / 100;
 // devo creare una variabile per sconto over 65 del 40%:
 let scontoSenior = prezzoBiglietto * 40 / 100;
 
-
 // condizioni:
 if (eta < 18){
-    console.log((prezzoBiglietto - scontoMinorenne).toFixed(2))
+    let prezzoMinorenne = (prezzoBiglietto - scontoMinorenne).toFixed(2);
+    // output:
+    document.getElementById("text").innerHTML = `Il prezzo del tuo biglietto è di ${prezzoMinorenne} euro`;
 }else if( eta > 65 ){
-    console.log((prezzoBiglietto - scontoSenior).toFixed(2))
+    let prezzoSenior = (prezzoBiglietto - scontoSenior).toFixed(2);
+    // output:
+    document.getElementById("text").innerHTML = `Il prezzo del tuo biglietto è di ${prezzoSenior} euro`;
 }else{
-    console.log(prezzoBiglietto.toFixed(2))
+    prezzoBiglietto;
+    // output:
+    document.getElementById("text").innerHTML = `Il prezzo del tuo biglietto è di ${prezzoBiglietto} euro`;
 }
 
 
 
-// output: prezzo finale con massimo due numeri decimali. 
